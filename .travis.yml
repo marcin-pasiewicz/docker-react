@@ -8,12 +8,12 @@ before_install:
 script:
   - docker run zaa1/docker-react CI=true npm run test -- --coverage
 
-deploy:
-  provider: elacticbeanstack
-  region: "us-east-1"
-  app: "docker-react"
-  env: "DockerReact-env"
-  bucket_name: elasticbeanstalk-us-east-1-823419045069
-  bucket_path: "docker-react"
-  on:
-    branch: master
+#deploy:
+#  provider: elacticbeanstack
+#  region: "us-east-1"
+#  app: "docker-react"
+#  env: "DockerReact-env"
+#  bucket_name: elasticbeanstalk-us-east-1-823419045069
+#  bucket_path: "docker-react"
+#  on:
+#    branch: master
